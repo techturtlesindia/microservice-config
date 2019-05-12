@@ -1,0 +1,20 @@
+server.port: 8201
+
+spring:
+  application.name: spring-monitor-application
+  cloud.config:
+    discovery:
+      enabled: true
+      serviceId: spring-config-server
+    fail-fast: true
+    retry:
+      initialInterval: 2000
+      maxAttempts: 30
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    registryFetchIntervalSeconds: 1
+  instance:
+    leaseRenewalIntervalInSeconds: 1

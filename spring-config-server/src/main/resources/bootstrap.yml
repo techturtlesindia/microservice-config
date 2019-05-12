@@ -1,0 +1,16 @@
+server.port: 8101
+
+spring:
+  application.name: spring-config-server
+  cloud.config:
+    server.git:
+      uri: https://github.com/techturtlesindia/microservice-config.git
+      default-label: master
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    registryFetchIntervalSeconds: 1
+  instance:
+    leaseRenewalIntervalInSeconds: 1

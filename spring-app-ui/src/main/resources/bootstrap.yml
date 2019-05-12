@@ -1,0 +1,23 @@
+server.port: 9201
+
+spring:
+  application.name: spring-app-ui
+  cloud.config:
+    discovery:
+      enabled: true
+      serviceId: spring-config-server
+    fail-fast: true
+    retry:
+      initialInterval: 2000
+      maxAttempts: 30
+  mvc.servlet.load-on-startup: 1
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    registryFetchIntervalSeconds: 1
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+
+server.servlet.context-path: /
