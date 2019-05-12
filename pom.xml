@@ -14,6 +14,7 @@
 		<!--config-server-->
         <module>spring-config-server</module>
 	<module>spring-proxy-server</module>
+	<module>spring-monitor-application</module>
     </modules>
 
 </project>
