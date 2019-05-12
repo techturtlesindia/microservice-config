@@ -13,6 +13,7 @@
         <module>spring-eureka-server</module>
 		<!--config-server-->
         <module>spring-config-server</module>
+	<module>spring-proxy-server</module>
     </modules>
 
 </project>
