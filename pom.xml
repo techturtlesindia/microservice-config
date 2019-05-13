@@ -16,6 +16,8 @@
 	<module>spring-proxy-server</module>
 	<module>spring-monitor-application</module>
 	<module>spring-app-ui</module>
+	    <module>mail-service</module>
+		<module>user-service</module>
     </modules>
 
 </project>
