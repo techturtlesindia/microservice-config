@@ -5,6 +5,6 @@ spring.cloud.config:
     fail-fast: false
 
 turbine:
-  appConfig: spring-app-ui, proxy-server
+  appConfig: spring-app-ui,mail-service,proxy-server
   clusterNameExpression: "'default'"
   instanceUrlSuffix: application/hystrix.stream

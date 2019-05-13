@@ -23,4 +23,8 @@ zuul:
       path: /**
       serviceId: spring-app-ui
       sensitiveHeaders:
+    mail-service:
+      path: /**
+      serviceId: mail-service
+      sensitiveHeaders:
 
